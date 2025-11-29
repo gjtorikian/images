@@ -2,7 +2,7 @@
 
 ARG REGISTRY
 
-FROM ${REGISTRY}yettoapp/base-ruby:main AS language
+FROM ${REGISTRY}gjtorikian/base-ruby:main AS language
 
 # Set environment
 ONBUILD ARG APP_ENV

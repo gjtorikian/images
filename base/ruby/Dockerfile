@@ -8,8 +8,8 @@ ARG RUBY_VERSION=3.4.5
 # Debian image to use for base images
 ARG DEBIAN_VERSION="bookworm"
 
-FROM ${REGISTRY}yettoapp/bin-tailscale:main AS tailscale
-FROM ${REGISTRY}yettoapp/bin-op:main AS op
+FROM ${REGISTRY}gjtorikian/bin-tailscale:main AS tailscale
+FROM ${REGISTRY}gjtorikian/bin-op:main AS op
 
 # Ruby image to use for base image
 FROM docker.io/ruby:${RUBY_VERSION}-slim-${DEBIAN_VERSION} AS base

@@ -1,6 +1,6 @@
 # images
 
-Images used across the Yetto-verse.
+Images I use.
 
 ## Directory hierarchy
 
@@ -45,4 +45,4 @@ That will build `<path>/Dockerfile`, tagged with `latest`. For example, the foll
 script/build service/postgres
 ```
 
-builds `service/postgres/Dockerfile`, and tags it as `yettoapp/service-postgres:main`.
+builds `service/postgres/Dockerfile`, and tags it as `gjtorikian/service-postgres:main`.

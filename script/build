@@ -6,7 +6,7 @@ DIR=$1
 shift
 FILE="$DIR/Dockerfile"
 NAME="${DIR//\//-}"
-LABEL="yettoapp/$NAME"
+LABEL="gjtorikian/$NAME"
 TAG="main"
 echo "Building $LABEL tagged as $TAG ($FILE)"
 

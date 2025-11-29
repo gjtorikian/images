@@ -57,10 +57,10 @@ jobs:
           echo "dockerfile=${{ matrix.dockerfile }}" >> $GITHUB_ENV
           dir_name=$(dirname "${{ matrix.dockerfile }}")
           echo "dir_name=$dir_name" >> $GITHUB_ENV
-          image_name="yettoapp/${dir_name//\//-}"
+          image_name="gjtorikian/${dir_name//\//-}"
           echo "image_name=$image_name" >> $GITHUB_ENV
 
-      - uses: yettoapp/images/.github/actions/publish-to-ghcr@main
+      - uses: gjtorikian/images/.github/actions/publish-to-ghcr@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -81,10 +81,10 @@ jobs:
           echo "dockerfile=${{ inputs.path }}/Dockerfile" >> $GITHUB_ENV
           dir_name=$(dirname "${{ inputs.path }}/Dockerfile")
           echo "dir_name=$dir_name" >> $GITHUB_ENV
-          image_name="yettoapp/${dir_name//\//-}"
+          image_name="gjtorikian/${dir_name//\//-}"
           echo "image_name=$image_name" >> $GITHUB_ENV
 
-      - uses: yettoapp/images/.github/actions/publish-to-ghcr@main
+      - uses: gjtorikian/images/.github/actions/publish-to-ghcr@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 

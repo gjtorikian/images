@@ -13,7 +13,7 @@ ARG DEBIAN_VERSION="bookworm"
 # Node image to use for base images
 FROM docker.io/node:${NODE_VERSION}-${DEBIAN_VERSION}-slim AS node
 
-FROM ${REGISTRY}yettoapp/bin-awscli:main AS awscli
+FROM ${REGISTRY}gjtorikian/bin-awscli:main AS awscli
 
 # Ruby image to use for base image
 FROM docker.io/ruby:${RUBY_VERSION}-slim-${DEBIAN_VERSION} AS ruby
